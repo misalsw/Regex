@@ -13,11 +13,14 @@ public class RegexTest {
         String email = scan.nextLine();
         System.out.println(" Enter the Mobile Number: ");
         String phoneNumber = scan.nextLine();
+        System.out.println("Enter the Password");
+        String password = scan.nextLine();
 
         UserRegistration user = new UserRegistration();
         user.firstName(name);
         user.email(email);
         user.phoneNumber(phoneNumber);
-        scan.close();
+        user.password(password);
+
     }
 }
