@@ -9,9 +9,12 @@ public class RegexTest {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please Enter the FullName: ");
         String name = scan.nextLine();
+        System.out.println(" Please Enter the Email");
+        String email = scan.nextLine();
 
         UserRegistration user = new UserRegistration();
         user.firstName(name);
+        user.email(email);
         scan.close();
     }
 }
