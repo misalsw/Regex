@@ -13,7 +13,7 @@ public class RegexTest {
         String email = scan.nextLine();
         System.out.println(" Enter the Mobile Number: ");
         String phoneNumber = scan.nextLine();
-        System.out.println("Enter the Password");
+        System.out.println(" Enter the Password: ");
         String password = scan.nextLine();
 
         UserRegistration user = new UserRegistration();
@@ -21,6 +21,6 @@ public class RegexTest {
         user.email(email);
         user.phoneNumber(phoneNumber);
         user.password(password);
-
+        scan.close();
     }
 }
