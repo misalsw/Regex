@@ -11,10 +11,13 @@ public class RegexTest {
         String name = scan.nextLine();
         System.out.println(" Please Enter the Email");
         String email = scan.nextLine();
+        System.out.println(" Enter the Mobile Number: ");
+        String phoneNumber = scan.nextLine();
 
         UserRegistration user = new UserRegistration();
         user.firstName(name);
         user.email(email);
+        user.phoneNumber(phoneNumber);
         scan.close();
     }
 }
